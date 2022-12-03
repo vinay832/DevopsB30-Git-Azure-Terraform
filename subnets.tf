@@ -16,3 +16,9 @@ resource "azurerm_subnet" "subnet-3" {
   virtual_network_name = azurerm_virtual_network.devopsb30azrg-vnet1.name
   address_prefixes     = ["10.30.3.0/24"]
 }
+resource "azurerm_subnet" "subnet-4" {
+  name                 = "subnet-4"
+  resource_group_name  = azurerm_resource_group.devopsb30azrg.name
+  virtual_network_name = azurerm_virtual_network.devopsb30azrg-vnet1.name
+  address_prefixes     = ["10.30.4.0/24"]
+}
